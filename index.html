@@ -7,18 +7,23 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    <div id="app">
-      <h1>Todo List</h1>
-      <div>
-        <input type="text" name="task" id="task" placeholder="Enter a task...">
-        <button id="add-task">Add</button>
+    <div id="app" class="flex flex-col items-center justify-center h-screen">
+
+      <div  class="w-[300px] p-[20px] bg-white border border-gray-200 shadow-md rounded-lg">
+        <h1 class="mb-5 text-gray-600 text-xl font-bold uppercase">Todo List</h1>
+        <div class="flex mb-5">
+          <input class="border-gray-300 border-2 rounded-lg p-2 w-full" type="text" placeholder="Enter a task..."> 
+          <button id="add-task" class="ml-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add</button>
+        </div>
+        <ul class="list-none p-0">
+  
+          <li class="flex items-center justify-between p-2 border-y-2 border-gray-200">
+            <span>Todo 1</span>
+            <button class="ml-2 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">X</button>
+          </li>
+    
+        </ul>
       </div>
-    </div>
-    <ul>
-      <li>Task 1</li>
-      <li>Task 2</li>
-      <li>Task 3</li>
-    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
